@@ -1,9 +1,11 @@
-import { nav, footer } from "./link.js";
+import { nav, footer, contact, sosmed } from "./link.js";
 import dom from "./dom.js";
 
 // navigation
-const navId = document.getElementById("nav");
-dom(nav, navId);
+dom(nav, "nav");
+// contact
+dom(contact, "contact");
+// sosmed
+dom(sosmed, "sosmed");
 // footer
-const footerId = document.getElementById("footer");
-dom(footer , footerId);
+dom(footer, "footer");

@@ -1,0 +1,49 @@
+@use "var" as *;
+
+/* sidebar */
+.sidebar {
+    margin-top:3rem;
+  h3 {
+    margin:2rem 0;
+    text-align: center;
+    width: 100%;
+    border: 5px solid $bgdark;
+    line-height: 0;
+    color: #fff;
+    span {
+      background-color: $bgdark;
+      padding: 0.5rem;
+    }
+  }
+  img {
+    text-align: center;
+    margin: auto;
+    border-radius: 50%;
+  }
+  ul {
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    /* btn sidebar */
+    background: $bgdark;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    margin: .5rem 0;
+    &:hover {
+      transform: translate(15px, 0);
+    }
+  }
+}
+
+/* about */
+.about {
+  font-weight: bold;
+  color: $bgdark;
+  font-size: 1rem;
+}
+#sosmed li{
+    margin-right:5px ;
+}

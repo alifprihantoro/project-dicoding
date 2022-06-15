@@ -1,0 +1,13 @@
+@use 'var' as *;
+article,.sidebar{
+    border-radius:15px;
+    box-shadow: -5px 5px 15px $bgnormal;
+}
+article{
+    padding: 1rem;
+    margin: .5rem;
+}
+.sidebar {
+    padding: .5rem;
+    margin: .5rem;
+}

@@ -1,0 +1,15 @@
+@use "var" as *;
+/* link */
+nav,
+footer,
+.sidebar,header {
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  ul {
+    list-style-type: none;
+  }
+}

@@ -1,0 +1,27 @@
+@use "var" as *;
+@media (min-width: 768px) {
+  #main {
+    display: flex;
+  }
+  .top {
+    max-width: $maxw;
+  }
+  nav {
+    /* navigation */
+    display: inline;
+    margin-left: 1rem;
+    ul {
+      display: inline-flex;
+      list-style: none;
+    }
+  }
+  /* content artikel */
+  #content {
+    width: 70%;
+  }
+  /* sidebar */
+  .sidebar {
+    width: 30%;
+    margin-top:.5rem;
+  }
+}

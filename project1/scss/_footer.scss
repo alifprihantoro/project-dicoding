@@ -1,12 +1,22 @@
-@use 'var' as *;
+@use "var" as *;
 /* footer */
-footer{
-    background-color: $bgdark;
-    max-width: 720px;
-    height: 100px;
-    margin:auto;
-    ul{
-        list-style-type: none;
-        display: flex;
+footer {
+  background-color: $bgdark;
+  max-width: $maxw;
+  height: 100px;
+  margin: auto;
+  text-align:center;
+  ul {
+    width: fit-content;
+    margin: auto;
+    padding-top: 1rem;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+    li {
+      margin-right: 1.5rem;
     }
+  }
 }
