@@ -1,0 +1,12 @@
+@use 'var' as *;
+/* footer */
+footer{
+    background-color: $bgdark;
+    max-width: 720px;
+    height: 100px;
+    margin:auto;
+    ul{
+        list-style-type: none;
+        display: flex;
+    }
+}

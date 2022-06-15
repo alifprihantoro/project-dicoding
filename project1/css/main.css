@@ -1,0 +1,53 @@
+/* reset */
+*,
+:after,
+:before {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* top */
+.top {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  background: red;
+}
+
+header svg {
+  width: 100px;
+  height: 100px;
+  fill: #fff;
+}
+
+/* navigation */
+nav ul {
+  display: inline-flex;
+  list-style: none;
+}
+nav ul li {
+  margin-right: 1.5rem;
+}
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* footer */
+footer {
+  background-color: darkred;
+  max-width: 720px;
+  height: 100px;
+  margin: auto;
+}
+footer ul {
+  list-style-type: none;
+  display: flex;
+}
+
+/*# sourceMappingURL=main.css.map */

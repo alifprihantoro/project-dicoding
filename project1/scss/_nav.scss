@@ -1,0 +1,15 @@
+@use 'var' as *;
+/* navigation */
+nav ul {
+  display: inline-flex;
+  list-style: none;
+  li {
+    margin-right: 1.5rem;
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+}
