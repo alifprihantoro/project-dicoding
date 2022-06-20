@@ -1,13 +1,21 @@
 @use "var" as *;
-/* top */
+/* top component start */
 .top {
+  bottom:0;
+  position: fixed;
+  z-index: 9;
+  width: 99vw;
+}
+/* top container */
+.container {
   width: 100%;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  background: $bgnormal;
+  background: $bgdark;
   max-width: 100vw;
   margin: auto;
 }
+/* top component end */

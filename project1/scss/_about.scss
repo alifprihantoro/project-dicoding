@@ -1,0 +1,19 @@
+@use "var" as *;
+/* about start */
+.about {
+  font-weight: bold;
+  color: $text;
+  font-size: 1rem;
+  img{
+    width:70%;
+    margin-left:15%;
+    text-align:center;
+    box-shadow: 0 0 15px $bgnormal;
+  }
+  h3{
+    font-size:1.5rem;
+  }
+}
+#sosmed li{
+    margin-right:5px ;
+}

@@ -13,13 +13,13 @@
     />
   </head>
   <body>
-    <!-- top -->
-    <div class="top">
+    <!-- header -->
+    <header class="top">
       <div class="container">
-        <!-- header -->
-        <header id="header">
+        <!-- header logo -->
+        <div id="header">
           <a href="/"> ALIEF PRIHANTORO </a>
-        </header>
+        </div>
         <!-- nav -->
         <nav>
           <div class="btn" onclick="navTogle()">
@@ -35,7 +35,7 @@
           <ul id="nav" class="none"></ul>
         </nav>
       </div>
-    </div>
+    </header>
     <!-- main -->
     <main id="main">
       <div id="content">
@@ -65,47 +65,54 @@
           </p>
           <figure>
             <a href="img/vim1.jpg">
-            <img src="img/vim1.jpg" alt="" />
+              <img src="img/vim1.jpg" alt="" />
             </a>
             <figcaption>Sebelum configurasi</figcaption>
           </figure>
           <figure>
             <a href="img/vim2.jpg">
-            <img src="img/vim2.jpg" alt="" />
+              <img src="img/vim2.jpg" alt="" />
             </a>
             <figcaption>Sesudah configurasi</figcaption>
           </figure>
           <p>
             Saya sudah install <b>NVIM</b> kok tampilannya seperti ini? Nah,
             agar tampilan kalian seperti gambar diatas silahkan kalian kunjungi
-            repo saya <a href="https://github.com/alifprihantoro">disini</a>. 
-            Nah disana Kalian bisa ikuti panduannya, jika ada kendala bisa diskusikan di <i>issues</i>. 
-            semoga lancar and happy coding.
+            repo saya <a href="https://github.com/alifprihantoro">disini</a>.
+            Nah disana Kalian bisa ikuti panduannya, jika ada kendala bisa
+            diskusikan di <i>issues</i>. semoga lancar and happy coding.
           </p>
-          <blockquote>Disarankan untuk menggunakan configurasi termux dibawah</blockquote>
+          <blockquote>
+            Disarankan untuk menggunakan configurasi termux dibawah
+          </blockquote>
           <h2>Configurasi Termux</h2>
           <p>
-          Nah bagi kalian yang sering ribet saat commit di github, kalian bisa menggunakan configurasi 
-          yang saya buat. Dan kalian bisa ubah beberapa. Karena configurasi termux saya gak terlalu advance, 
-          cuman alias dan beberapa function untuk membantu navigasi di command line. Untuk repo-nya sendiri 
-          silahkan klick <a href="https://github.com/alifprihantoro/config">disini</a>.
+            Nah bagi kalian yang sering ribet saat commit di github, kalian bisa
+            menggunakan configurasi yang saya buat. Dan kalian bisa ubah
+            beberapa. Karena configurasi termux saya gak terlalu advance, cuman
+            alias dan beberapa function untuk membantu navigasi di command line.
+            Untuk repo-nya sendiri silahkan klick
+            <a href="https://github.com/alifprihantoro/config">disini</a>.
           </p>
           <h2>Tempat belajar</h2>
           <p>
-          Ada banyak website untuk belajar, Namun jika kalian bingung mulai dari mana, bisa pakek cari <b>roadmap.sh</b> 
-          Disana udah ada panduannya, walau dalam Bahasa Inggris, namun kalian bisa browser di google dengan keyword tersebut. 
-          Dan salah satu sumber informasi paling bagus ialah dokumentasi. Ada juga Youtube untuk mempelajari bassic. 
-          Namun jika kalian masih kesusahan bisa ikut ke ecourse atau bootcamp agar ada pembimbingnya.
+            Ada banyak website untuk belajar, Namun jika kalian bingung mulai
+            dari mana, bisa pakek cari <b>roadmap.sh</b>
+            Disana udah ada panduannya, walau dalam Bahasa Inggris, namun kalian
+            bisa browser di google dengan keyword tersebut. Dan salah satu
+            sumber informasi paling bagus ialah dokumentasi. Ada juga Youtube
+            untuk mempelajari bassic. Namun jika kalian masih kesusahan bisa
+            ikut ke ecourse atau bootcamp agar ada pembimbingnya.
           </p>
           <h2>Kesimpulan</h2>
           <p>
-          Semua hal bisa jadi mungkin asalkan kita berusaha. Tak ada alasan tidak punya laptop/computer. 
-          Semoga membantu anda and Happy Coding~
-
+            Semua hal bisa jadi mungkin asalkan kita berusaha. Tak ada alasan
+            tidak punya laptop/computer. Semoga membantu anda and Happy Coding~
           </p>
         </article>
       </div>
-      <div class="sidebar">
+      <!-- aside start -->
+      <aside class="sidebar">
         <!-- about -->
         <h2>
           <span> ABOUT </span>
@@ -113,15 +120,12 @@
         <div class="about">
           <!-- image -->
           <a href="img/profile.png">
-          <img src="img/profile.png" alt="profile ALIEF PRIHANTORO" />
+            <img src="img/profile.png" alt="profile ALIEF PRIHANTORO" />
           </a>
           <!-- Name -->
-          <h3>Alief Prihantoro</h3>
-          <!-- description -->
-          <p>
-            Hello, I'm a web front end. My expert is, HTML, CSS, JS, and some
-            framework like hugo, tailwind, and next js.
-          </p>
+          <h3><b>Nama</b> : Alief Prihantoro</h3>
+          <h3><b>Lahir</b> : Semarang, 23 Januari 2001</h3>
+          <h3><b>Tinggal</b> : Ambarawa, Kab. Semarang</h3>
         </div>
         <!-- contact -->
         <h2>
@@ -134,7 +138,8 @@
         </h2>
         <ul id="sosmed"></ul>
         <!-- lates project -->
-      </div>
+      </aside>
+      <!-- end aside -->
     </main>
     <!-- footer -->
     <footer>

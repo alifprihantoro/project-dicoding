@@ -1,5 +1,5 @@
 @use "var" as *;
-/* link */
+/* global link start */
 nav,
 footer,
 .sidebar,header {
@@ -13,3 +13,4 @@ footer,
     list-style-type: none;
   }
 }
+/* global link end */

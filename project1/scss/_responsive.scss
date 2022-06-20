@@ -1,18 +1,65 @@
 @use "var" as *;
+/* mobile ver start */
+@media (max-width: 768px) {
+  nav {
+    /* nav */
+    z-index: 9;
+    .none {
+      width: 0;
+      overflow: hidden;
+      transform: translate(-150vw, 0);
+    }
+    ul {
+      /* body nav */
+      position: fixed;
+      bottom: 50px;
+      left: 0;
+      width: 100%;
+      background: $text;
+      transition-duration: 1s;
+      a{
+        padding: 1rem;
+        width:100%;
+        display:block;
+        &:hover{
+            background: $bgdark;
+        }
+      }
+    }
+    .btn svg {
+      /* svg */
+      background: $bgnormal;
+      width: 50px;
+      height: 50px;
+      fill: #fff;
+    }
+  }
+}
+/* mobile ver end */
+/* desktop ver start */
 @media (min-width: 768px) {
   #main {
     display: flex;
   }
   .top {
+    position: sticky;
+    top: 0;
+  }
+  .container {
     max-width: $maxw;
   }
+  /* navigation */
   nav {
-    /* navigation */
-    display: inline;
     margin-left: 1rem;
+    svg {
+      display: none;
+    }
     ul {
       display: inline-flex;
       list-style: none;
+      li {
+        margin-right: 1.5rem;
+      }
     }
   }
   /* content artikel */
@@ -22,6 +69,7 @@
   /* sidebar */
   .sidebar {
     width: 30%;
-    margin-top:.5rem;
+    margin-top: 0.5rem;
   }
 }
+/* desktop ver end */

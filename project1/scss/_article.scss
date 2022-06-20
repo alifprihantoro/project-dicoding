@@ -1,13 +1,36 @@
-@use 'var' as *;
-article,.sidebar{
-    border-radius:15px;
-    box-shadow: -5px 5px 15px $bgnormal;
+@use "var" as *;
+/* article start */
+article,
+.sidebar {
+  border-radius: 15px;
+  box-shadow: 0 0 15px $bgnormal;
 }
-article{
-    padding: 1rem;
-    margin: .5rem;
+article {
+  padding: 1rem;
+  margin: 0.5rem;
+  * {
+    color: $bgdark;
+    margin: 2rem 0.5rem;
+  }
+  img {
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-top:1rem;
+  }
+  figure {
+    padding: 5px;
+    box-shadow: 0 0 15px $bgnormal;
+    border-radius:15px;
+  }
+  figcaption{
+    text-align:center;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 }
 .sidebar {
-    padding: .5rem;
-    margin: .5rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
 }
+/* article end */

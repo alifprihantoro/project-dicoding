@@ -1,13 +1,74 @@
-/* reset */
+@use 'var' as *;
+/* reset start */
 *,
 :after,
 :before {
   border: 0 solid #e5e7eb;
   box-sizing: border-box;
   margin: 0;
-  padding:0;
-  max-width:100vw;
+  padding: 0;
+  max-width: 100vw;
 }
-body{
-    width: 100%;
+html {
+  scroll-behavior: smooth;
 }
+::selection {
+  color:#fff;
+  background: $bgdark;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $bgnormal;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $text;
+  border-radius:15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $bgdark;
+}
+body {
+  width: 100%;
+}
+/* font family */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lora", serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+a,
+p,
+blockquote {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* font size */
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.6rem;
+}
+h3 {
+  font-size: 1.2rem;
+}
+h4 {
+  font-size: 1rem;
+}
+/* reset end */
