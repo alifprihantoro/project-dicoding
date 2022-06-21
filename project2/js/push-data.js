@@ -1,12 +1,15 @@
 import { getForm } from './get-form.js'
-import cekStatus from './cek-status.js'
 import { storageAdd } from './web-storage.js'
+import importStorage from './get-storage.js'
+import showData from './show.js'
 
-// on click submit form / add book
+export const data_book = importStorage()
+
 document.getElementById('bookSubmit').onclick = function () {
-  let data_book = getForm()
-  cekStatus(data_book.status)
+  data_book.push(getForm())
   storageAdd(data_book)
-  // id_form.reset()
+  alert('berhasil!')
+  id_form.reset()
+  showData()
   return false
 }

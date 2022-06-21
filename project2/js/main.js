@@ -1,7 +1,7 @@
 import './push-data.js'
-import './web-storage.js'
-let strArray = [{ name:'honda' },{ name:'honda' },{ name:'honda' }, "q", "w", "w", "w", "e", "i", "u", "r"];
-let findDuplicates = arr => arr.filter((item.name, index) => arr.indexOf(item) != index)
+import showData from './show.js'
+import showSearch from './search.js'
 
-console.log(findDuplicates(strArray)) // All duplicates
-console.log([...new Set(findDuplicates(strArray))]) // Unique duplicates
+showData()
+showSearch()
+// import './web-storage.js'
