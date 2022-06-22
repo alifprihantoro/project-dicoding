@@ -1,7 +1,8 @@
-import { data_book } from './push-data.js'
 import filterByStatus from './filter-status.js'
+import getBtnList from './get-btn.js'
 
-export default function showData() {
-  filterByStatus(data_book, 'false', 'incompleteBookshelfList')
-  filterByStatus(data_book, 'true', 'completeBookshelfList')
+export default function showData(data) {
+  filterByStatus(data)
+  getBtnList('delete')
+  getBtnList('change')
 }

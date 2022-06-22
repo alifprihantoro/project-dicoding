@@ -1,19 +1,14 @@
-export default function filterByStatus(data, value, resultId) {
-  const results_post = document.getElementById(resultId)
-  results_post.innerHTML = ''
-  data
-    .filter((item) => {
-      return item.status.includes(value)
-    })
-    .forEach((e) => {
-      const div = document.createElement('div')
-      div.innerHTML = `
-<ul>
-  <li>${e.judul}</li>
-</ul>
-  `
-      // <li>${e.penulis}</li>
-      // <li>${e.tahun}</li>
-      results_post.appendChild(div)
-    })
+import getId from './getId.js'
+import resultList from './result-list.js'
+
+export default function filterByStatus(data) {
+  getId('incompleteBookshelfList').innerHTML = ''
+  getId('completeBookshelfList').innerHTML = ''
+  data.forEach((e) => {
+    if (e.status == false) {
+      resultList(e, 'incompleteBookshelfList')
+    } else {
+      resultList(e, 'completeBookshelfList')
+    }
+  })
 }

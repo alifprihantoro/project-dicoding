@@ -1,7 +1,7 @@
-import './push-data.js'
 import showData from './show.js'
-import showSearch from './search.js'
-
-showData()
-showSearch()
+import './search.js'
+import './push-data.js'
+import importStorage from './get-storage.js'
+showData(importStorage())
+// import './delete.js'
 // import './web-storage.js'

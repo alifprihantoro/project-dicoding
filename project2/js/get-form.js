@@ -1,30 +1,25 @@
-const id_form = document.getElementById('inputBook')
-const search = document.getElementById('searchBook')
+import getId from './getId.js'
 
-// form add book
+const id_form = getId('inputBook')
+const search = getId('searchBook')
+
 export const getForm = () => {
   const judul = id_form.elements['inputBookTitle'].value
   const penulis = id_form.elements['inputBookAuthor'].value
   const tahun = id_form.elements['inputBookYear'].value
-  const status = id_form.elements['inputBookIsComplete'].checked.toString()
-  // console.log(`
-  //   judul : ${judul}
-  //   penulis : ${penulis}
-  //   tahun : ${tahun}
-  //   sudah dibaca : ${status}
-  //   `);
+  const status = id_form.elements['inputBookIsComplete'].checked
+  const id = Date.now()
   return {
+    id,
     judul,
     penulis,
     tahun,
-    status
+    status,
   }
 }
 
-// form search
 export const getSearch = () => {
   const search_val = search.elements['searchBookTitle'].value
-  // console.log(search_val);
   id_form.reset()
   return search_val
 }
