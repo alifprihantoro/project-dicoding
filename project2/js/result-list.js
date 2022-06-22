@@ -1,8 +1,11 @@
-import getId from "./getId.js"
+import getId from './getId.js'
 
 export default function resultList(e, resultId) {
   const results_post = getId(resultId)
   const div = document.createElement('div')
+
+  const status = e.status == false ? 'selesai' : 'belum'
+
   div.className = 'book-list'
   div.setAttribute('title', e.judul)
   div.setAttribute('value', e.id)
@@ -15,7 +18,8 @@ export default function resultList(e, resultId) {
 <div>
   <button class='delete' type="submit">Delete</button>
   <button class='change' type="submit">Ubah</button>
-  <button class='selesai' type="submit">selesai</button>
+  <br/>
+  <button class='selesai' type="submit">Taruh di list ${status} baca</button>
 </div>
   `
   results_post.appendChild(div)
