@@ -10,7 +10,8 @@ export default function getBtnList(classNameBtn) {
     }
   } else {
     for (var i = 0; i < getClassName.length; i++) {
-      getClassName[i].addEventListener('click', changeThisList, false)
+      const get_id_list_book = getClassName[i].parentNode.parentElement.getAttribute('value')
+      getClassName[i].addEventListener('click', ()=>changeThisList(get_id_list_book), false)
     }
   }
 }
