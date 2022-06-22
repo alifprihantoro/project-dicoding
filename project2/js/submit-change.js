@@ -3,6 +3,7 @@ import { getForm } from './get-form.js'
 import { storageAdd } from './web-storage.js'
 import getId from './getId.js'
 import showData from './show.js'
+import addBtn from './push-data.js'
 
 export default function changeSubmitBtn(id) {
   document.getElementById('book-submit-change').onclick = function () {
@@ -18,12 +19,9 @@ export default function changeSubmitBtn(id) {
       }
     }
     storageAdd(projects)
-    getId('btn-form').innerHTML = `
-<button id="bookSubmit" type="submit">submit</button>
-<button id="book-submit-change" type="submit">change</button>
-`
-  showData(importStorage())
-  getId('inputBook').reset()
-  return false
+    addBtn()
+    showData(importStorage())
+    getId('inputBook').reset()
+    return false
   }
 }

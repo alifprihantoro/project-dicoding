@@ -5,4 +5,5 @@ export default function showData(data) {
   filterByStatus(data)
   getBtnList('delete')
   getBtnList('change')
+  getBtnList('selesai')
 }

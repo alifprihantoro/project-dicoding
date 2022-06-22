@@ -13,7 +13,7 @@ export default function resultList(e, resultId) {
   <h4>${e.tahun}</h4>
 </div>
 <div>
-  <button class='delete' value='${e.id}' type="submit">Delete</button>
+  <button class='delete' type="submit">Delete</button>
   <button class='change' type="submit">Ubah</button>
   <button class='selesai' type="submit">selesai</button>
 </div>
