@@ -1,8 +1,10 @@
-import filterByStatus from './filter-status.js'
 import getBtnList from './get-btn.js'
+import incompleteLoad from './incomplete-load.js'
+import completeLoad from './complete-load.js'
 
-export default function showData(data) {
-  filterByStatus(data)
+export default function showData() {
+  incompleteLoad()
+  completeLoad()
   getBtnList('delete')
   getBtnList('change')
   getBtnList('selesai')

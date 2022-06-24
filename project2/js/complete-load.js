@@ -1,0 +1,18 @@
+import getId from './getId.js'
+import resultList from './result-list.js'
+import importStorage from './get-storage.js'
+
+export default function completeLoad(max = 5) {
+  getId('completeBookshelfList').innerHTML = ''
+  let complete = 1
+  importStorage().forEach((e) => {
+    if (e.status == true && complete <= max) {
+      resultList(e, 'completeBookshelfList')
+      getId('load-sudah').innerHTML = ''
+      complete++
+    }
+  })
+  if (complete > max) {
+    getId('load-sudah').innerHTML = 'loadmore'
+  }
+}

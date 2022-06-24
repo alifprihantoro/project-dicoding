@@ -8,5 +8,5 @@ export default function deleteThisList(id) {
     return object.id !== parseInt(id)
   })
   storageAdd(newArr)
-  showData(newArr)
+  showData()
 }
