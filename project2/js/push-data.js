@@ -7,13 +7,24 @@ import btnSubmitHtml from './btn-submit.js'
 
 export default function addBtn() {
   btnSubmitHtml()
-  document.getElementById('bookSubmit').onclick = function () {
-    const data = importStorage()
-    data.push(getForm())
-    storageAdd(data)
-    alert('berhasil!')
-    getId('inputBook').reset()
-    showData()
+  getId('cancelSub').onclick = () => {
+    getId('form').classList.toggle('hide')
     return false
   }
+  getId('bookSubmit').addEventListener(
+    'click',
+    () => {
+      if (getForm().judul === '' | getForm().penulis === '') {
+        alert('Pastikan seluruh data terisi!')
+      } else {
+        const data = importStorage()
+        data.push(getForm())
+        storageAdd(data)
+        getId('inputBook').reset()
+        showData()
+      }
+      return false
+    },
+    true
+  )
 }

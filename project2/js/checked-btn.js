@@ -1,6 +1,6 @@
 import {storageAdd} from "./web-storage.js"
-import showData from "./show.js"
 import importStorage from "./get-storage.js"
+import getId from "./getId.js"
 
 export default function checkedBtn(id) {
   const data = importStorage()
@@ -15,5 +15,5 @@ export default function checkedBtn(id) {
     }
   }
   storageAdd(data)
-  showData()
+  getId(id).remove();
 }

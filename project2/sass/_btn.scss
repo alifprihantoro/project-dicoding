@@ -1,0 +1,24 @@
+button{
+  min-width:50px;
+  min-height: 50px;
+  padding:0 1rem;
+  background: blue;
+  color: #fff;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  &hover {
+    border: none;
+  }
+  &:focus {
+    outline: none;
+    outline-offset: -4px;
+  }
+}
+.loadmore {
+  width: 100%;
+button {
+  width: 100%;
+  padding-top: 1rem;
+}
+}

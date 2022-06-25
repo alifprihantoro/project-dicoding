@@ -15,47 +15,66 @@
       <h1 class="head_bar__title">Bookshelf Apps</h1>
       <nav>
         <ul>
-          <li><a href="#">Add Data</a></li>
+          <li><button id="add-data">Add Data</button></li>
+          <li><button id="refres-data-belum">refres data belum</button></li>
+          <li><button id="refres-data-sudah">refres data sudah</button></li>
+          <li><button id="refres-data-all">refres semua data</button></li>
         </ul>
         <form id="searchBook">
+          <select id="search-by">
+            <option value="volvo">Cari Berdasarkan Judul</option>
+            <option value="volvo">Cari Berdasarkan Penulis</option>
+          </select>
           <input id="searchBookTitle" type="text" placeholder="search..." />
           <button id="searchSubmit" type="submit">Cari</button>
         </form>
       </nav>
     </header>
     <main>
-      <section class="input_section">
-        <h2>Masukkan Buku Baru</h2>
-        <form id="inputBook">
-          <div class="input">
-            <input id="inputBookTitle" type="text" placeholder="Nama Buku..." required />
-          </div>
-          <div class="input">
-            <input id="inputBookAuthor" type="text" placeholder="Nama Pengarang..." required />
-          </div>
-          <div class="input">
-            <input id="inputBookYear" type="date" required />
-          </div>
-          <div class="input_inline">
-            <input id="inputBookIsComplete" type="checkbox" />
-            <label for="inputBookIsComplete">Selesai dibaca</label>
-          </div>
-          <span id="btn-form" />
-        </form>
+      <section class="input_section hide" id="form">
+        <div class="form-container">
+          <h2>Masukkan Buku Baru</h2>
+          <form id="inputBook">
+            <div class="input">
+              <input
+                id="inputBookTitle"
+                type="text"
+                placeholder="Nama Buku..."
+                required
+              />
+            </div>
+            <div class="input">
+              <input
+                id="inputBookAuthor"
+                type="text"
+                placeholder="Nama Pengarang..."
+                required
+              />
+            </div>
+            <div class="input">
+              <input id="inputBookYear" placeholder="Tahun" type="number"/>
+            </div>
+            <div class="input_inline">
+              <input id="inputBookIsComplete" type="checkbox" />
+              <label for="inputBookIsComplete">Selesai dibaca</label>
+            </div>
+            <span id="btn-form" />
+          </form>
+        </div>
       </section>
 
       <section class="book_shelf">
         <h2>Belum selesai dibaca</h2>
 
         <div id="incompleteBookshelfList" class="book_list"></div>
-        <button id="load-belum" />
+        <div class="loadmore" id="load-belum" />
       </section>
 
       <section class="book_shelf">
         <h2>Selesai dibaca</h2>
 
         <div id="completeBookshelfList" class="book_list"></div>
-        <button id="load-sudah" />
+        <div class="loadmore" id="load-sudah" />
       </section>
     </main>
 

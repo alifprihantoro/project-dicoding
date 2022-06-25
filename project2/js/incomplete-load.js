@@ -12,6 +12,6 @@ export default function incompleteLoad(max = 5,data) {
     }
   })
   if (incomplete > max) {
-    getId('load-belum').innerHTML = 'loadmore'
+    getId('load-belum').innerHTML = '<button>loadmore</button>'
   }
 }

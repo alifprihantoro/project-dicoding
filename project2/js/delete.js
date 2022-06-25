@@ -1,6 +1,6 @@
 import { storageAdd } from './web-storage.js'
-import showData from './show.js'
 import importStorage from './get-storage.js'
+import getId from './getId.js'
 
 export default function deleteThisList(id) {
   const data = importStorage()
@@ -8,5 +8,5 @@ export default function deleteThisList(id) {
     return object.id !== parseInt(id)
   })
   storageAdd(newArr)
-  showData()
+  getId(id).remove();
 }
