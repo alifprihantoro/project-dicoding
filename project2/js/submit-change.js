@@ -20,7 +20,7 @@ export default function changeSubmitBtn(id) {
     }
     storageAdd(projects)
     addBtn()
-    showData(importStorage())
+    showData()
     getId('inputBook').reset()
     return false
   }

@@ -13,7 +13,7 @@ export default function addBtn() {
     storageAdd(data)
     alert('berhasil!')
     getId('inputBook').reset()
-    showData(importStorage())
+    showData()
     return false
   }
 }

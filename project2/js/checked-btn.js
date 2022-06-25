@@ -15,5 +15,5 @@ export default function checkedBtn(id) {
     }
   }
   storageAdd(data)
-  showData(data)
+  showData()
 }

@@ -1,6 +1,7 @@
 import { getSearch } from './get-form.js'
 import showData from './show.js'
 import importStorage from './get-storage.js'
+import loadmoreBtn from './loadmore.js'
 
 export default function filterTitle() {
   const getSearchVal = getSearch()
@@ -14,5 +15,6 @@ export default function filterTitle() {
       data_result_search.push(e)
       return e
     })
-  showData(data_result_search)
+  showData(5,data_result_search)
+  loadmoreBtn(data_result_search)
 }

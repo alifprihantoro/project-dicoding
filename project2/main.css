@@ -12,9 +12,12 @@ input, button {
   font-size: 16px;
 }
 
-main, header {
-  max-width: 720px;
+body {
   margin: auto;
+}
+
+main {
+  max-width: 720px;
 }
 
 .book-list {
@@ -26,4 +29,4 @@ main, header {
   border-radius: 15px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

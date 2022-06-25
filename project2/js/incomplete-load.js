@@ -1,11 +1,10 @@
 import getId from './getId.js'
 import resultList from './result-list.js'
-import importStorage from './get-storage.js'
 
-export default function incompleteLoad(max = 5) {
+export default function incompleteLoad(max = 5,data) {
   getId('incompleteBookshelfList').innerHTML = ''
   let incomplete = 1
-  importStorage().forEach((e) => {
+  data.forEach((e) => {
     if (e.status == false && incomplete <= max) {
       resultList(e, 'incompleteBookshelfList')
       getId('load-belum').innerHTML = ''

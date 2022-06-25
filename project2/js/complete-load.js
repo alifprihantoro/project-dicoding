@@ -2,7 +2,7 @@ import getId from './getId.js'
 import resultList from './result-list.js'
 import importStorage from './get-storage.js'
 
-export default function completeLoad(max = 5) {
+export default function completeLoad(max = 5,data) {
   getId('completeBookshelfList').innerHTML = ''
   let complete = 1
   importStorage().forEach((e) => {
