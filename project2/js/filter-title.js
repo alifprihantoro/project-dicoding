@@ -19,6 +19,6 @@ export default function filterTitle(option) {
       data_result_search.push(e)
       return e
     })
-  showData(5, data_result_search)
+  showData(5, data_result_search,'search')
   loadmoreBtn(data_result_search)
 }

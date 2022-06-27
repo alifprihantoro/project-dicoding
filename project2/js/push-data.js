@@ -11,20 +11,16 @@ export default function addBtn() {
     getId('form').classList.toggle('hide')
     return false
   }
-  getId('bookSubmit').addEventListener(
-    'click',
-    () => {
-      if (getForm().judul === '' | getForm().penulis === '') {
-        alert('Pastikan seluruh data terisi!')
-      } else {
-        const data = importStorage()
-        data.push(getForm())
-        storageAdd(data)
-        getId('inputBook').reset()
-        showData()
-      }
-      return false
-    },
-    true
-  )
+  getId('bookSubmit').onclick = () => {
+    if ((getForm().judul === '') | (getForm().penulis === '')) {
+      alert('Pastikan seluruh data terisi!')
+    } else {
+      const data = importStorage()
+      data.push(getForm())
+      storageAdd(data)
+      getId('inputBook').reset()
+      showData()
+    }
+    return false
+  }
 }

@@ -257,6 +257,17 @@ select#search-by {
   color: rgb(80, 80, 255);
 }
 
+footer {
+  background: rgb(80, 80, 255);
+  max-width: 720px;
+  margin: auto;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 1rem;
+}
+
 .hide {
   display: none;
 }

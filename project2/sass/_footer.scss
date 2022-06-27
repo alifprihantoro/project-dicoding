@@ -1,0 +1,11 @@
+@use './var' as *;
+footer{
+  background: $bgdark;
+  max-width: $maxw;
+  margin:auto;
+  border-radius: 10px;
+  color:#fff;
+  text-align:center;
+  padding:2rem 0;
+  margin-top:1rem;
+}
