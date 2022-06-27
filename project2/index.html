@@ -33,7 +33,7 @@
     <main>
       <section class="input_section hide" id="form">
         <div class="form-container">
-          <h2>Masukkan Buku Baru</h2>
+          <h2><span> Masukkan Buku Baru </span></h2>
           <form id="inputBook">
             <div class="input">
               <input
@@ -52,7 +52,7 @@
               />
             </div>
             <div class="input">
-              <input id="inputBookYear" placeholder="Tahun" type="number"/>
+              <input id="inputBookYear" placeholder="Tahun" type="number" />
             </div>
             <div class="input_inline">
               <input id="inputBookIsComplete" type="checkbox" />
@@ -64,14 +64,18 @@
       </section>
 
       <section class="book_shelf">
-        <h2>Belum selesai dibaca</h2>
+        <h2>
+          <span> Belum selesai dibaca </span>
+        </h2>
 
         <div id="incompleteBookshelfList" class="book_list"></div>
         <div class="loadmore" id="load-belum" />
       </section>
 
       <section class="book_shelf">
-        <h2>Selesai dibaca</h2>
+        <h2>
+          <span> Selesai dibaca </span>
+        </h2>
 
         <div id="completeBookshelfList" class="book_list"></div>
         <div class="loadmore" id="load-sudah" />

@@ -1,0 +1,17 @@
+@use './var' as *;
+h2 {
+  /* heading sidebar */
+  font-size: 1rem;
+  margin: 2rem 0;
+  text-align: center;
+  width: 100%;
+  border: 5px solid $bgdark;
+  line-height: 0;
+  border-radius: 15px;
+  span {
+    background-color: $bgdark;
+    padding: 0.5rem;
+    border-radius: 10px;
+  color: #fff;
+  }
+}

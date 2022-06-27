@@ -1,7 +1,9 @@
+@use './var' as *;
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color:$bgdark;
 }
 
 body, input, button {

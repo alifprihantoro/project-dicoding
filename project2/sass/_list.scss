@@ -1,9 +1,9 @@
+@use './var' as *;
 .book-list {
   display:flex;
   list-style-type: none;
   padding:1rem;
   margin:1rem;
-  background: red;
   border-radius:15px;
-
+  box-shadow: 0 0 10px $bgdark inset;
 }

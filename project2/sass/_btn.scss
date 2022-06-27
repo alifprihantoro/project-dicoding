@@ -1,8 +1,9 @@
-button{
-  min-width:50px;
-  min-height: 50px;
-  padding:0 1rem;
-  background: blue;
+@use './var' as *;
+button {
+  min-width: 30px;
+  min-height: 30px;
+  padding: 0 1rem;
+  background: $bgdark;
   color: #fff;
   border-radius: 15px;
   border: none;
@@ -17,8 +18,14 @@ button{
 }
 .loadmore {
   width: 100%;
-button {
-  width: 100%;
-  padding-top: 1rem;
+  button {
+    width: 100%;
+    padding: 1rem;
+  }
 }
+.btn-list {
+  text-align: center;
+  .selesai {
+    padding: 1rem;
+  }
 }
