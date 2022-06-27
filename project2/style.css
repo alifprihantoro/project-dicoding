@@ -111,7 +111,7 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-.input_section * {
+.input_section label {
   color: #fff;
 }
 .input_section button {
@@ -241,16 +241,19 @@ select#search-by {
   background: transparent;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: rgb(80, 80, 255);
   opacity: 1; /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
   color: rgb(80, 80, 255);
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder {
+  /* Microsoft Edge */
   color: rgb(80, 80, 255);
 }
 

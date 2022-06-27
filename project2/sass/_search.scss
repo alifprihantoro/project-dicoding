@@ -4,7 +4,7 @@ select#search-by {
   border: 2px solid;
   border-radius: 5px;
   padding: 0.2rem;
-  color:$bgdark;
+  color: $bgdark;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -13,15 +13,18 @@ select#search-by {
   background: transparent;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: $bgdark;
   opacity: 1; /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
   color: $bgdark;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder {
+  /* Microsoft Edge */
   color: $bgdark;
 }

@@ -3,6 +3,7 @@ import { getForm } from './get-form.js'
 import { storageAdd } from './web-storage.js'
 import getId from './getId.js'
 import addBtn from './push-data.js'
+import myHtmlList from './innerhtml.js'
 
 export default function changeSubmitBtn(id) {
   document.getElementById('book-submit-change').onclick = function () {
@@ -15,17 +16,7 @@ export default function changeSubmitBtn(id) {
         getData[i].tahun = data.tahun
         getData[i].status = data.status
         const status = getData[i].status == false ? 'selesai' : 'belum'
-        getId(id).innerHTML = `<div>
-  <h3>${getData[i].judul}</h3>
-  <h4>${getData[i].penulis}</h4>
-  <h4>${getData[i].tahun}</h4>
-</div>
-<div>
-  <button class='delete' type="submit">Delete</button>
-  <button class='change' type="submit">Ubah</button>
-  <br/>
-  <button class='selesai' type="submit">Taruh di list ${status} baca</button>
-</div>`
+        getId(id).innerHTML = myHtmlList(getData[i], status)
         break
       }
     }
