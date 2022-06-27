@@ -10,6 +10,9 @@
 @use './search';
 @use './footer';
 @use './info';
+.input_section {
+  transition-duration:1s;
+}
 .hide{
-  display:none;
+  transform:translateX(150vw);
 }

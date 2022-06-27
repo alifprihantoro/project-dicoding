@@ -1,3 +1,4 @@
+@use './var' as *;
 .info,.info-list {
   background: #5050ff3d;
   border-radius: 15px;
@@ -9,8 +10,12 @@
   button {
     margin-left: 15px;
   }
+  span{
+    color:$text;
+  }
 }
 
 .info-list {
   padding:1rem;
+  width:70%;
 }
