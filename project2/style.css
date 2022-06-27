@@ -210,7 +210,6 @@ button:focus {
 }
 
 h2 {
-  /* heading sidebar */
   font-size: 1rem;
   margin: 2rem 0;
   text-align: center;
@@ -266,6 +265,24 @@ footer {
   text-align: center;
   padding: 2rem 0;
   margin-top: 1rem;
+}
+
+.info, .info-list {
+  background: rgba(80, 80, 255, 0.2392156863);
+  border-radius: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.info {
+  padding: 2rem;
+}
+.info button {
+  margin-left: 15px;
+}
+
+.info-list {
+  padding: 1rem;
 }
 
 .hide {

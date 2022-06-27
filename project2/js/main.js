@@ -5,20 +5,20 @@ import loadmoreBtn from './loadmore.js'
 import './add-btn.js'
 import importStorage from './get-storage.js'
 import getId from './getId.js'
-import incompleteLoad from './incomplete-load.js'
-import completeLoad from './complete-load.js'
+import loadData from './loader.js'
 
 showData()
 addBtn()
 loadmoreBtn()
 const data = importStorage()
+
+// nav refres -------------------
 getId('refres-data-belum').onclick = () => {
-  incompleteLoad(5, data)
+  loadData(5, data, 'show', 'incompleteBookshelfList', 'load-belum')
 }
 getId('refres-data-sudah').onclick = () => {
-  completeLoad(5, data)
+  loadData(5, data, 'show', 'completeBookshelfList', 'load-sudah')
 }
 getId('refres-data-all').onclick = () => {
-  incompleteLoad(5, data)
-  completeLoad(5, data)
+  showData()
 }

@@ -2,7 +2,7 @@ export default function myHtmlList(e,status) {
   return `
 <div class='content'>
   <h3>${e.judul}</h3>
-  <div class='info'>
+  <div class='info-list'>
     <h4>${e.penulis}</h4>
     <h4>${e.tahun}</h4>
   </div>
