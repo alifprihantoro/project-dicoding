@@ -8,8 +8,10 @@ button {
   border-radius: 15px;
   border: none;
   cursor: pointer;
-  &hover {
+  &:hover {
     border: none;
+    background-color: $bgnormal;
+    font-weight: bold;
   }
   &:focus {
     outline: none;
@@ -21,6 +23,8 @@ button {
   button {
     width: 100%;
     padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
   }
 }
 .btn-list {

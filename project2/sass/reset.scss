@@ -1,18 +1,67 @@
 @use './var' as *;
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    color:$bgdark;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: $bgdark;
+}
+// scroll ---------
+html {
+  scroll-behavior: smooth;
+}
+::selection {
+  color: #fff;
+  background: $bgdark;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-body, input, button {
-    font-family: 'Open Sans', sans-serif;
+/* Track */
+::-webkit-scrollbar-track {
+  background: $bgnormal;
 }
 
-input, button {
-    font-size: 16px;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $text;
+  border-radius: 15px;
 }
-ul,li {
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $bgdark;
+}
+// end scroll ---------
+body,
+input,
+button {
+  font-family: 'Open Sans', sans-serif;
+}
+
+input,
+button {
+  font-size: 16px;
+}
+ul,
+li {
   list-style-type: none;
+}
+
+// font -----------
+h1,
+h2,
+h3 {
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a,
+b,
+h4,
+::placeholder,
+select {
+  font-family: 'Poppins', sans-serif;
 }

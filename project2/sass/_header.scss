@@ -1,4 +1,21 @@
+@use './var' as *;
 nav,nav ul{
   display:flex;
   flex-wrap: wrap;
+}
+
+nav {
+  ul{
+    margin-bottom: 1rem;
+    li{
+      line-height: 3rem;
+      margin:0 .5rem;
+    }
+  }
+}
+h1{
+  background: $bgdark;
+  color:white;
+  padding:1rem;
+  border-radius: 15px;
 }

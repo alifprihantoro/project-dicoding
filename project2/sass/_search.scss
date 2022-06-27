@@ -1,0 +1,10 @@
+input,
+select#search-by {
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 0.2rem;
+}
+input#searchBookTitle,
+select#search-by {
+  background: transparent;
+}

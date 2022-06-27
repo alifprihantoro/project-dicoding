@@ -1,21 +1,31 @@
 @use './var' as *;
-.input_section{
+.input_section {
   position: fixed;
   top: 0;
   right: 0;
-  width:100vw;
+  width: 100vw;
   height: 100vh;
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  .form-container{
+  * {
+    color: #fff;
+  }
+  button {
+    background: rgb(255, 255, 255, 0.5);
+    font-weight: bold;
+    text-transform: uppercase;
+    &:hover{
+      background:rgb(255, 255, 255, 0.2) ;
+    }
+  }
+  .form-container {
     width: fit-content;
     height: fit-content;
-    margin:auto;
+    margin: auto;
     background: $bgdark;
-    padding:15px;
-    border-radius:15px;
-    color:#fff ;
+    padding: 15px;
+    border-radius: 15px;
     line-height: 2rem;
   }
 }
