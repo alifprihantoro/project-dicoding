@@ -231,11 +231,27 @@ select#search-by {
   border: 2px solid;
   border-radius: 5px;
   padding: 0.2rem;
+  color: rgb(80, 80, 255);
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 input#searchBookTitle,
 select#search-by {
   background: transparent;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(80, 80, 255);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(80, 80, 255);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgb(80, 80, 255);
 }
 
 .hide {

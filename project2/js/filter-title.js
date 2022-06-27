@@ -12,7 +12,7 @@ export default function filterTitle(option) {
       if (option === 'judul') {
         return item.judul.includes(getSearchVal)
       } else {
-        return item.author.includes(getSearchVal)
+        return item.penulis.includes(getSearchVal)
       }
     })
     .forEach((e) => {
